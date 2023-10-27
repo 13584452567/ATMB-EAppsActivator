@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Icons\brevent.png" />
+    <None Remove="Icons\Greenify.png" />
+    <None Remove="Icons\ShizukuManager.png" />
+    <None Remove="Icons\stopapp.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Icons\brevent.png" />
+    <EmbeddedResource Include="Icons\Greenify.png" />
+    <EmbeddedResource Include="Icons\ShizukuManager.png" />
+    <EmbeddedResource Include="Icons\stopapp.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutumnBox.SDK" Version="11.8.0" />
+  </ItemGroup>
+
+</Project>
